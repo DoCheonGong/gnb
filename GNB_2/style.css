@@ -1,0 +1,68 @@
+@charset "UTF-8";
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+ul, li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+header {
+    width: 1000px;
+    height: 150px;
+    margin: 0 auto;
+    position: relative;
+}
+header h1 {
+    position: absolute;
+    left: 8px;
+    bottom: 20px;
+}
+header h1 a {
+    font: bold 30px/1 "Arial";
+    color: #333;
+}
+#gnb {
+    position: absolute;
+    right: 0;
+    bottom: 0px;
+    text-align: center;
+}
+#gnb > li {
+    float: left;
+    position: relative;
+}
+#gnb > li > a {
+    display: block;
+    width: 150px;
+    height: 60px;
+    font: bold 16px/60px "Arial";
+    color: #333;
+}
+#gnb > li > a:hover,
+#gnb > li > a.on {
+    background-color: #333;
+    color: #fff;
+}
+
+#gnb > li > ul {
+    position: absolute;
+    top: 60px;
+    left: 0px;
+    display: none;
+}
+#gnb > li > ul > li > a {
+    display: block;
+    width: 150px;
+    height: 50px;
+    background-color: #555;
+    font: 12px/50px "Arial";
+    color: #bbb;
+}
+#gnb > li > ul > li > a:hover {
+    background-color: #111;
+    color: orange;
+}
